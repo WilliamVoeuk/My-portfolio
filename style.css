@@ -471,6 +471,11 @@ Section
     margin-top: -30px;
 }
 
+.left-slide a {
+    font-size: 1.4em;
+    color: wheat;
+}
+
 .right-slide {
     height: 100%;
     position: absolute;
