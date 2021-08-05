@@ -16,17 +16,14 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
     <div class="navigation">
         <ul>
             <li><a href="#Home">Home</a></li>
-            <li><a href="">À propos de moi</a></li>
-            <li><a href="">Mes compétences</a></li>
-            <li><a href="">Project</a></li>
+            <li><a href="#About">À propos de moi</a></li>
+            <li><a href="#Project">Mes projets</a></li>
             <li><a href="">Contact</a></li>
         </ul>
     </div>
-    <!-- </div>  -->
 
     <div class="main">
         <div class="topbar">
@@ -48,6 +45,12 @@
                     <div class="text-2">Voeuk William</div>
                     <div class="text-3">Je suis développeur Web</div>
                     <div class="text-4">J'appends: <span class="typing"></span></div>
+                </div>
+                <br><br>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/william-voeuk/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/WilliamVoeuk" target="_blank"> <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -73,7 +76,16 @@
                             <br> J'y ai appris à travailler en groupe de projet avec divers profils et à m'adapter en fonction des envies/besoins de tous.
                             <br>
                             <br> Aujourd'hui, je souhaite mettre mes connaissances en développement Web au challenge pour aider à développer des sites à but(s) humaniste(s) ou/et éducatif(s)
-                        </p>
+                        </p> <br>
+                        <p>Mes compétences:</p>
+                        <div class="skills">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JS</p>
+                            <p>Django</p>
+                            <p>SQL</p>
+                            <p>Python</p>
+                        </div>
                         <a href="CV VOEUK William Dév Front-End.pdf" target="_blank" class="cvlink">Mon CV</a>
                     </div>
                 </div>
@@ -140,15 +152,17 @@
 
 
         <!-- Projects Section Start -->
-        <h2 class="title">Projets</h2>
 
         <section class="project" id="Project">
+            <h2>Mes projets</h2>
             <div class="projects-container">
                 <div class="left-slide">
 
                     <div style="background-color: rgb(254, 160, 0)">
                         <h1>Projet en pygame</h1>
                         <p>Un jeu de tir en 2D codé en Python à l'aide de l'API Pygame</p>
+                        <br>
+                        <a href="https://github.com/WilliamVoeuk/Pygame-test.git">Voir le projet</a>
                     </div>
                     <div style="background-color: rgb(105, 17, 105)">
                         <h1>Parallax Scrolling</h1>
@@ -173,10 +187,8 @@
             </div>
         </section>
 
+
     </div>
-
-
-    <div class="test" style="background-image: url('images/Parallax.png');"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer type="text/javascript" src="script/app.js"></script>
 </body>

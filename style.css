@@ -206,6 +206,17 @@ a {
     font-weight: 500;
 }
 
+.home .social-media {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+.home .social-media a {
+    color: white;
+}
+
 
 /* End Of home section */
 
@@ -318,6 +329,16 @@ a {
     color: rgb(204, 20, 20);
 }
 
+.about .about-content .right p span {
+    background: crimson;
+    color: white;
+    font-size: 1em;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+}
+
 .about .about-content .right .cvlink {
     display: inline-block;
     background: crimson;
@@ -330,7 +351,8 @@ a {
     transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover {
+.about .about-content .right a:hover,
+.about .about-content .right .skills p:hover {
     color: crimson;
     background: white;
 }
@@ -338,6 +360,27 @@ a {
 .about .about-content .right p {
     line-height: 30px;
     letter-spacing: 1px;
+}
+
+.about .about-content .right .skills {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: 1.4em;
+}
+
+.about .about-content .right .skills p {
+    color: white;
+    background-color: crimson;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px crimson solid;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right .skills p:hover {
+    cursor: default;
 }
 
 
@@ -436,6 +479,13 @@ Section
 #Project {
     font-family: 'Lato', sans-serif;
     height: 100vh;
+}
+
+#Project h2 {
+    margin: 0 0 100px 0;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .projects-container {
