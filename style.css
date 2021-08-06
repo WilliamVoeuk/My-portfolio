@@ -790,4 +790,8 @@ Section
     .max_width {
         padding: 0 20px;
     }
+    #Contacts form {
+        width: 80vw;
+        margin: 0 auto;
+    }
 }
