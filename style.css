@@ -642,6 +642,7 @@ Section
     padding: 0 15px;
     font-size: 17px;
     background: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 #Contacts form .textarea textarea {
