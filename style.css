@@ -645,6 +645,11 @@ Section
     color: white;
 }
 
+#Contacts form .field input:active,
+#Contacts form .textarea textarea:active {
+    background: rgb(95, 95, 95);
+}
+
 #Contacts form .textarea textarea {
     padding-top: 10px;
     resize: none;
