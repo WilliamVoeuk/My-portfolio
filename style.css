@@ -584,7 +584,7 @@ Section
 }
 
 #Contacts .title::after {
-    content: 'Maintenons le contact';
+    content: 'Gardons contact';
     position: absolute;
     bottom: -12px;
     left: 50%;

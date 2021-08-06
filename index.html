@@ -48,7 +48,8 @@
                 </div>
                 <br><br>
                 <div class="social-media">
-                    <a href="https://www.linkedin.com/in/william-voeuk/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/william-voeuk/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/WilliamVoeuk" target="_blank"> <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -191,25 +192,28 @@
                 <h2 class="title">
                     Contacts
                 </h2>
-                <form action="https://formsubmit.co/voeuk.william1@gmail.com" method="POST">
+                <form action="https://formspree.io/f/xgerndlk" method="POST">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Votre nom" required>
+                            <input type="text" name="Nom" placeholder="Votre nom" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Votre E-mail" required>
+                            <input type="email" name="Mail" placeholder="Votre E-mail" required>
                         </div>
 
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Objet" required>
+                        <input type="text" name="Objet" placeholder="Objet" required>
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Écrivez votre message ici..." required></textarea>
+                        <textarea cols="30" name="Message" rows="10" placeholder="Écrivez votre message ici..." required></textarea>
                     </div>
                     <div class="button">
                         <button type="submit">Envoyer</button>
                     </div>
+                    <input type="hidden" name="_next" value="https://williamvoeuk.github.io/Portfolio/">
+
+
                 </form>
             </div>
         </section>
