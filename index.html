@@ -20,14 +20,14 @@
         <ul>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">À propos de moi</a></li>
-            <li><a href="#Project">Mes projets</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#Projects">Mes projets</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
         </ul>
     </div>
 
     <div class="main">
         <div class="topbar">
-            <a href="" class="logo">VOEUK William</a>
+            <a href="#Home" class="logo">VOEUK William</a>
             <div class="toggle">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
@@ -59,7 +59,7 @@
 
         <!-- About Section Start -->
 
-        <section class="about" id="About">
+        <section id="About">
             <div class="max_width">
                 <h2 class="title">
                     À propos de moi
@@ -86,7 +86,7 @@
                             <p>SQL</p>
                             <p>Python</p>
                         </div>
-                        <a href="CV VOEUK William Dév Front-End.pdf" target="_blank" class="cvlink">Mon CV</a>
+                        <a href="CV William Voeuk.pdf" target="_blank" class="cvlink">Mon CV</a>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
 
         <!-- Life Journey Section Start  -->
 
-        <section class="parcours" id="Parcours">
+        <section id="Parcours">
             <h1>Mon parcours</h1>
             <div class="timeline">
                 <ul>
@@ -153,22 +153,22 @@
 
         <!-- Projects Section Start -->
 
-        <section class="project" id="Project">
+        <section id="Project">
             <h2>Mes projets</h2>
-            <div class="projects-container">
+            <div class="projects-container" id="Projects">
                 <div class="left-slide">
 
                     <div style="background-color: rgb(254, 160, 0)">
                         <h1>Projet en pygame</h1>
                         <p>Un jeu de tir en 2D codé en Python à l'aide de l'API Pygame</p>
                         <br>
-                        <a href="https://github.com/WilliamVoeuk/Pygame-test.git">Voir le projet</a>
+                        <a href="https://github.com/WilliamVoeuk/Pygame-test.git" target="_blank">Voir le projet</a>
                     </div>
                     <div style="background-color: rgb(105, 17, 105)">
                         <h1>Parallax Scrolling</h1>
                         <p>Un projet qui joue avec la position du scrolling</p>
                         <br>
-                        <a href="https://williamvoeuk.github.io/First-Parallax/">Voir le projet</a>
+                        <a href="https://williamvoeuk.github.io/First-Parallax/" target="_blank">Voir le projet</a>
                     </div>
 
                 </div>
@@ -186,7 +186,33 @@
                 </div>
             </div>
         </section>
+        <section id="Contacts">
+            <div class="max-width">
+                <h2 class="title">
+                    Contacts
+                </h2>
+                <form action="https://formsubmit.co/voeuk.william1@gmail.com" method="POST">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Votre adresse mail" required>
+                        </div>
 
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Objet" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Écrivez votre message ici..." required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

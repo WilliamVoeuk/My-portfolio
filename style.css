@@ -13,7 +13,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: #333;
+    background-color: rgb(0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -31,7 +31,7 @@ body {
 }
 
 section {
-    padding: 100px 0;
+    padding: 75px 0;
     min-height: 100vh;
     /* margin: 100px 0; */
 }
@@ -121,6 +121,7 @@ a {
 }
 
 .main .topbar {
+    width: 100vw;
     position: fixed;
     top: 0;
     width: calc(100% - 0px);
@@ -242,7 +243,7 @@ a {
     padding-bottom: 30px;
 }
 
-.about .title::before {
+#About.title::before {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -253,7 +254,7 @@ a {
     transform: translateX(-50%);
 }
 
-.about .title::after {
+#About .title::after {
     content: 'Qui suis-je';
     position: absolute;
     bottom: -12px;
@@ -265,71 +266,47 @@ a {
     transform: translateX(-50%);
 }
 
-.about .parcours::before {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 300px;
-    height: 3px;
-    background: #333;
-    transform: translateX(-50%);
-}
-
-.about .parcours::after {
-    content: 'Mon parcours';
-    position: absolute;
-    bottom: -18px;
-    left: 50%;
-    padding: 5px;
-    font-size: 1em;
-    font-weight: 500;
-    color: crimson;
-    background: #fff;
-    transform: translateX(-50%);
-}
-
-.about .about-content {
+#About .about-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.about .about-content .left {
+#About .about-content .left {
     width: 45%;
 }
 
-.about .about-content .left img {
+#About .about-content .left img {
     height: 500px;
     width: 550px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.about .about-content .right {
+#About .about-content .right {
     width: 55%;
 }
 
-.about .about-content .right .about_text {
+#About .about-content .right .about_text {
     font-size: 1.6em;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.about .about-content .right .about_text span {
+#About .about-content .right .about_text span {
     color: crimson;
 }
 
-.about .about-content .right p {
+#About .about-content .right p {
     text-align: justify;
 }
 
-.about .about-content .right a {
+#About .about-content .right a {
     color: rgb(204, 20, 20);
 }
 
-.about .about-content .right p span {
+#About .about-content .right p span {
     background: crimson;
     color: white;
     font-size: 1em;
@@ -339,7 +316,7 @@ a {
     border: 2px solid crimson;
 }
 
-.about .about-content .right .cvlink {
+#About .about-content .right .cvlink {
     display: inline-block;
     background: crimson;
     color: white;
@@ -351,25 +328,25 @@ a {
     transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover,
-.about .about-content .right .skills p:hover {
+#About .about-content .right a:hover,
+#About .about-content .right .skills p:hover {
     color: crimson;
     background: white;
 }
 
-.about .about-content .right p {
+#About .about-content .right p {
     line-height: 30px;
     letter-spacing: 1px;
 }
 
-.about .about-content .right .skills {
+#About .about-content .right .skills {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
     font-size: 1.4em;
 }
 
-.about .about-content .right .skills p {
+#About .about-content .right .skills p {
     color: white;
     background-color: crimson;
     margin: 20px;
@@ -379,7 +356,7 @@ a {
     transition: all 0.3s ease;
 }
 
-.about .about-content .right .skills p:hover {
+#About .about-content .right .skills p:hover {
     cursor: default;
 }
 
@@ -478,7 +455,6 @@ Section
 
 #Project {
     font-family: 'Lato', sans-serif;
-    height: 100vh;
 }
 
 #Project h2 {
@@ -543,7 +519,7 @@ Section
     width: 100%;
 }
 
-button {
+.action-buttons button {
     background-color: #fff;
     border: none;
     color: #aaa;
@@ -552,7 +528,7 @@ button {
     padding: 15px;
 }
 
-button:hover {
+.action-buttons button:hover {
     color: #222;
 }
 
@@ -580,14 +556,123 @@ button:focus {
 }
 
 
-/* start 
+/*  */
 
 
+/* start Contact 
+
+Section
+*/
+
+#Contacts {
+    background: #101010;
+    color: white;
+}
+
+#Contacts .title {
+    color: white;
+}
+
+#Contacts .title::before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+
+#Contacts .title::after {
+    content: 'Maintenons le contact';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 0.5em;
+    color: crimson;
+    transform: translateX(-50%);
+}
+
+#Contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+#Contacts form {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+#Contacts form .fields {
+    display: flex;
+}
+
+#Contacts form .field {
+    margin: 30px 0;
+}
+
+#Contacts form .field,
+#Contacts form .fields .field {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+#Contacts form .name {
+    margin-right: 10px;
+}
+
+#Contacts form .email {
+    margin-left: 10px;
+}
+
+#Contacts form .textarea {
+    height: 200px;
+    width: 100%;
+}
+
+#Contacts form .field input,
+#Contacts form .textarea textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px lightgrey solid;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#Contacts form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+#Contacts form .button {
+    height: 50px;
+    margin-top: 30px;
+}
+
+#Contacts form .button button {
+    color: white;
+    width: 50%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+#Contacts form .button button:hover {
+    color: crimson;
+    background: none;
+}
 
 
-
-
-responsive */
+/*responsive */
 
 @media only screen and (min-width: 1063px) {
     .timeline ul li {
@@ -642,17 +727,31 @@ responsive */
     .home .max_width {
         margin-left: 0px;
     }
-    .about .about-content .right {
+    #About .about-content .right {
         width: 40%;
+    }
+    #Project h1 {
+        font-size: 1em;
+        position: relative;
+        bottom: 100px;
+    }
+    #Project p,
+    #Project a {
+        font-size: 0.75em;
+        position: relative;
+        bottom: 50px;
+    }
+    #Project a {
+        top: 100px;
     }
 }
 
 @media only screen and (max-width: 1204px) {
-    .about .about-content .left img {
+    #About .about-content .left img {
         height: 350px;
         width: 350px;
     }
-    .about .about-content .right {
+    #About .about-content .right {
         width: 40%;
     }
     .timeline ul li {
@@ -661,21 +760,18 @@ responsive */
 }
 
 @media only screen and (max-width: 947px) {
-    .max_width {
-        max-width: 800px;
-    }
-    .about .about-content .column {
+    #About .about-content .column {
         width: 50%;
     }
-    .about .about-content .left {
+    #About .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right {
+    #About .about-content .right {
         flex: 100%;
     }
-    .about .about-content .right p {
+    #About .about-content .right p {
         line-height: 25px;
         letter-spacing: 0px;
     }
