@@ -11,7 +11,7 @@ toggle.onclick = function() {
 }
 $(document).ready(function() {
     var typed = new Typed(".typing", {
-        strings: ["React Native", "Three JS"],
+        strings: ["Three JS", "React Native"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
