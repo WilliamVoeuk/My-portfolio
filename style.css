@@ -676,6 +676,17 @@ Section
     background: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+#logo {
+    text-align: center;
+    color: crimson;
+    font-size: 300px;
+}
+
+#logo h1 {
+    font-family: "Oswald", sans-serif;
+}
+
 
 /*responsive */
 
